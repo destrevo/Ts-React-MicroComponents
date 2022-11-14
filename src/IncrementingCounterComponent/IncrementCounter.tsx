@@ -37,6 +37,7 @@ export default function IncrementCounter({ start, end, duration, uniqeuId }: Inc
         incrementingCounter(start, end, duration, (value: any) => {
             document.getElementById(uniqeuId)!.innerHTML = value;
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [restart])
 
 
