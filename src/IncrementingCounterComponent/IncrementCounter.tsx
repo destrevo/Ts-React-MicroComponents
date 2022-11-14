@@ -42,10 +42,10 @@ export default function IncrementCounter({ start, end, duration, uniqeuId }: Inc
 
 
     return (
-        <>
+        <div style={{ textAlign: 'center' }}>
             <div id={uniqeuId} className="counter" />
             {/* remove the button in real cenario */}
-            <button onClick={()=>{setRestart(x=>!x)}}>restart to test</button>
-        </>
+            <button onClick={() => { setRestart(x => !x) }}>restart to test</button>
+        </div>
     )
 }
