@@ -15,7 +15,7 @@ export default function ProgressLine({ options }: IProgressLineOptions): JSX.Ele
     }
 
     const prev = (): void => {
-        if (currentActive !== 1) setCurrentActive((currentActive) => currentActive - 1)
+        if (currentActive !== 1) setCurrentActive((prev) => prev - 1)
     }
     useEffect((): void => {
         setProgressWidth((currentActive - 1) / (steps.length - 1) * 100)
